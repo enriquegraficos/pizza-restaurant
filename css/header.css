@@ -2,11 +2,13 @@ header{
    display: grid;
    gap: 1rem;
    grid-auto-rows: auto;
-   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
    justify-content: center;
    align-items: center;
 }
-
+nav{
+    margin-left: 30px;
+}
 .logo-container{
     display: flex;
     flex-direction: row;
@@ -48,7 +50,7 @@ header{
     background-color:white;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 30px;
     width: 100%;
     min-height: 25vh;
     z-index: 98;
@@ -157,7 +159,7 @@ header{
 @media only screen and (max-width: 500px) {
     .hamburger {
       display: block;
-      margin-left: 30px;
+      
     }
     
     .menu-container{
@@ -167,5 +169,7 @@ header{
         margin-top: 150px;
 
     }
-    
+    nav{
+        margin-left: 30px;
+    }
   }

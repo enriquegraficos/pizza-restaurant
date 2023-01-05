@@ -1,7 +1,7 @@
 .slider{
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     margin-left: 100px;
     margin-right: 100px;
     align-items: center;
