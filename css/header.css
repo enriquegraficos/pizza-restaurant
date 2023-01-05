@@ -157,7 +157,7 @@ header{
 @media only screen and (max-width: 500px) {
     .hamburger {
       display: block;
-      margin-left: 50px;
+      margin-left: 30px;
     }
     
     .menu-container{
