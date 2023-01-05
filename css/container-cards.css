@@ -1,0 +1,110 @@
+.title-trending{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 36px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.title-trending h2{
+    margin: 15px;
+    color: var(--textColor);
+}
+
+.container-cards{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.container-cards .card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 290px;
+    height: 530px;
+    border-radius: 30px;
+    border: 1px solid #BDBDBD;
+    padding:23px;
+
+}
+
+.container-cards .card:hover{
+    /* transform: translateX(5px) translateY(-7px);*/
+    border: 2px solid var(--primaryColor);
+    transition: all 0.3s ease;
+
+}
+
+
+.container-cards h3{
+    color: var(--textColor);
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 9px;
+}
+.container-cards p{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 17px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.container-cards span{
+    padding-top: 28px;
+    padding-bottom:28px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--textColor);
+}
+
+.container-cards #option{
+    margin-bottom: 9px;
+    border-radius: 24px;
+    padding:9px, 16px, 9px, 16px;
+    width: 240px;
+    height: 40px;
+    border: 0px;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+
+}
+
+.container-cards button{
+    width: 100%;;
+}
+
+.img-card{
+    clip-path: circle(50% at 50% 50%);
+    width: 175px;
+    height: 175px;
+    margin-bottom: 15px;
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container-cards {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .title-trending h2{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+  }

@@ -1,0 +1,14 @@
+@import url(./header.css);
+@import url(./slider.css);
+@import url(./container-cards.css);
+
+:root{
+    --textColor:#333333;
+    --primaryColor:#F44A25;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
