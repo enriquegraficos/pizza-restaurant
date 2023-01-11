@@ -2,19 +2,19 @@ header{
    display: grid;
    gap: 1rem;
    grid-auto-rows: auto;
-   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
    justify-content: center;
    align-items: center;
+   margin-left: 100px;
+   margin-right: 100px;
 }
-nav{
-    margin-left: 30px;
-}
+
 .logo-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -24,13 +24,16 @@ nav{
     gap: 36px;
     align-items: center;
     justify-content: center;
-  
+
 }
 
 .menu-container li{
     list-style: none;
 }
 
+.container-icons li{
+    list-style: none;
+}
 .menu-container li a{
     text-decoration: none;
     font-family: 'Fira Sans', sans-serif;
@@ -40,6 +43,51 @@ nav{
     cursor: pointer;
 }
 
+.container-icons .sub-menu .carrito{
+    display: none;
+    list-style: none;
+   
+}
+
+.container-icons .sub-menu:hover .carrito{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background:white;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 0 10px 40px rgba(33, 32, 32, 0.5);
+
+
+}
+
+.container-icons .sub-menu .carrito #lista-carrito th{
+    color: black;
+    padding: 7px;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.container-icons .sub-menu button{
+    border: 0px;
+    outline: none;
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.container-icons .sub-menu button a{
+    text-decoration: none;
+}
+
+
+.container-icons .sub-menu .img-carrito{
+    border-radius: 5px;
+}
 
 .menu-mobile{
     display: flex;
@@ -83,22 +131,20 @@ nav{
     height: auto;
 }
 
-.menu-container li a:hover{
+.container-icons li a:hover{
     transition: all 0.3s ease;
     color: var(--primaryColor);
     font-weight:500;
 }
 
-.container-icons-right{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-}
 
-.container-icons-right .icon-action{
+.container-icons .sub-menu{
+    display: flex;
+    /* justify-content: right; */
     cursor: pointer;
+    width: 35px;
+    
+   
 }
 
 
@@ -156,12 +202,27 @@ nav{
 .hamburger.is-active .bar{
     opacity: 0;
 }
+
+.borrar-item{
+    padding:5px;
+    border-radius: 5px;
+    background:white;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+.borrar-item:hover{
+    color: red;
+}
+
 @media only screen and (max-width: 500px) {
     .hamburger {
       display: block;
-      
+      text-align: center;
     }
-    
+
     .menu-container{
         display: none;
     }
@@ -169,7 +230,9 @@ nav{
         margin-top: 150px;
 
     }
-    nav{
+    header{
         margin-left: 30px;
-    }
-  }
+        margin-right: 30px;
+    }    
+}
+  

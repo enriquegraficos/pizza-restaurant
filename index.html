@@ -7,6 +7,9 @@
     <title>Pizza Shid</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/c0f00ae246.js" crossorigin="anonymous"></script>
+    <meta property="og:title"              content="Pizza Restaurant" />
+    <meta property="og:description"        content="How much does culture influence creative thinking?" />
+    <meta property="og:image"              content="https://images.pexels.com/photos/14067665/pexels-photo-14067665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
 
 </head>
 <body>
@@ -21,7 +24,10 @@
                 <div class="bar">
 
                 </div>
+                
            </button>
+           
+           
             <ul class="menu-container">
                 <li class="menu-item">
                     <a href="">Home</a>
@@ -38,7 +44,12 @@
                 <li class="menu-item">
                     <a href="">Blog</a>
                 </li>
+
+                
             </ul>
+
+
+            
 
             <ul class="menu-mobile">
                 <li class="menu-item">
@@ -56,14 +67,44 @@
                 <li class="menu-item">
                     <a href="">Blog</a>
                 </li>
-            </ul>
-        </nav>
-        <div class="container-icons-right">
-            <img class="icon-action" src="./img/icons-right/zoom.png" alt="Search">
-            <img class="icon-action" src="./img/icons-right/shot.png" alt="Cart">
-            <button class="button">SIGN IN</button>
-        </div>
 
+                 
+
+            </ul>
+           
+            
+          
+        </nav>
+        
+        <ul class="container-icons">
+            <li class="sub-menu">
+                <img class="icon-action" src="./img/icons-right/shot.png" alt="Cart">
+
+                <div class="carrito">
+                    <div>
+
+                        <table id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <button>
+                            <a href="" id="vaciar-carrito" class="borrar button">Vaciar carrito</a>
+                        </button>
+                    </div>
+                </div>
+                
+            </li>
+        </ul>
     </header>
     <main>
         <section class="slider">
@@ -89,7 +130,7 @@
                 <select id="option">
                     <option value="Regular">Regular</option>
                 </select>
-                <button class="button">Add to cart</button>
+                <button class="button agregar-carrito" data-id="1">Add to cart</button>
             </div>
             <div class="card">
                 <img src="./img/cards/02.png" class="img-card" alt="pizza">
@@ -99,7 +140,7 @@
                 <select id="option">
                     <option value="Regular">Regular</option>
                 </select>
-                <button class="button">Add to cart</button>
+                <button class="button agregar-carrito" data-id="2">Add to cart</button>
             </div>
             <div class="card">
                 <img src="./img/cards/03.png" class="img-card" alt="pizza">
@@ -109,7 +150,7 @@
                 <select id="option">
                     <option value="Regular">Regular</option>
                 </select>
-                <button class="button">Add to cart</button>
+                <button class="button agregar-carrito" data-id="3">Add to cart</button>
             </div>
             <div class="card">
                 <img src="./img/cards/02.png" class="img-card" alt="pizza">
@@ -119,7 +160,7 @@
                 <select id="option">
                     <option value="Regular">Regular</option>
                 </select>
-                <button class="button">Add to cart</button>
+                <button class="button agregar-carrito" data-id="4">Add to cart</button>
             </div>
         </section>
     </main>
